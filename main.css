@@ -1,18 +1,26 @@
 .logo {
-    
-    margin-left: 37%;
-    
+    width: 200px;
+    margin-bottom: 60px;   
+}
+
+body {
+    margin: 0;
 }
 
 #carouselExampleSlidesOnly{
     margin-top: 30px;
     display: inline-block;
-    margin-bottom: 1400px;
     width: 100%;
     padding: 60px;
    
     
 }
+
+.container-fluid {
+    background-color: white;
+}
+
+
 
 .carousel-inner {
     border: solid 8px rgb(15, 12, 12);
@@ -24,3 +32,19 @@
     background-size: cover;
     max-height: 600px;
 }
+
+.navbar-center {
+    position: static;
+    
+    
+    
+}
+
+.btn {
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 0%;
+    
+}
+
