@@ -10,16 +10,19 @@
 <style>
     .logo {
     width: 200px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-top: 10px;
 }
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: #F79A59;
 }
 
 .container-fluid {
-    background-color: white;
+    margin: 0;
 }
 
 .navbar-center {
@@ -28,47 +31,98 @@ body {
 }
 
 .btn {
+    background-color: #FEECC0;
+    color: #CC8453;
     width: 200px;
+    border: none;
     height: 50px;
     border-radius: 0%;
-}
-
-#carouselExampleSlidesOnly{
-    margin-top: 30px;
-    display: inline-block;
-    width: 100%;
-    padding: 60px;
-   
-    
-}
-.carousel-inner {
-    border: solid 8px rgb(15, 12, 12);
     
 }
 
-.carousel-inner img {
-    width: 100%;
-    background-size: cover;
-    max-height: 600px;
-}
 
 .oso {
+    width: 110px;
     height: 140px;
+    margin: 0;
     display: flex;
     margin-top: 30px;
+    
     
 }
 
 .info-logo {
     display: flex;
+    margin-bottom: 0;
 }
 
 .oso2 {
+    width: 110px;
     height: 140px;
-
+    margin: 0;
     display: flex;
     margin-top: 30px;
 }
+
+.navbar-center {
+    position: static;
+    background-color: #F79A59;
+    
+    
+    
+}
+
+.info-acerca-de {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 200px;
+  }
+  .info-acerca-de img  {
+    flex-shrink: 0; 
+    margin-right: 20px; 
+    
+    height: auto;
+    display: flex;
+    }
+
+    .acercade {
+    height: 260px;
+    margin-bottom: 10px;
+    margin-right: 210px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+h2{
+    color: #000000;
+}
+
+.info-acerca-de {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.img-acerca-de{
+    display: block;
+    
+}
+
+.imagen{
+    width: 350px;
+    object-fit: cover;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    border: solid 4px #FFFFFF;
+    
+    
+
+
+}
+
 
 </style>
 <body>
@@ -78,18 +132,25 @@ body {
         <img class="oso2 img-fluid mx-auto" src="./img/oso2.png" alt="oso2.png">
       </div>
       </div>
-        <nav class=" navbar-expand-sm navbar-expand-md navbar navbar-center col-md-12 col-sm-12 col-mg-4 col-lg-6 col-xl-12">
+        <nav style="font-family: Arial, Helvetica, sans-serif;" class=" navbar-expand-sm navbar-expand-md navbar navbar-center col-md-12 col-sm-12 col-mg-4 col-lg-6 col-xl-12">
           <form class="container-fluid justify-content-center">
-            <button class="btn btn-outline-success me-4 " type="button" onclick="location.href='./Index.html'">Inicio</button>
-            <button class="btn btn-outline-success me-4 " type="button">Acerca de</button>
-            <button class="btn btn-outline-success me-4" type="button" onclick="location.href='menu.html'">Menú</button>
-            <button class="btn btn-outline-success me-4" type="button" onclick="location.href='./Contacto.html'">Contáctanos</button>
+            <button class="btn btn-outline-success me-2 " type="button" onclick="location.href='./Index.html'">Inicio</button>
+            <button class="btn btn-outline-success me-2 " type="button">Acerca de</button>
+            <button class="btn btn-outline-success me-2" type="button" onclick="location.href='menu.html'">Menú</button>
+            <button class="btn btn-outline-success me-2" type="button" onclick="location.href='./Contacto.html'">Contáctanos</button>
           </form>
         </nav>
-        <div class="info-contacto">
-            <img src="" alt="">
-            <p> hola</p>
+        <div class="info-acerca-de">
+            <div class="img-acerca-de">
+                <img class="imagen" src="./img/WhatsApp Image 2024-04-14 at 11.32.26 AM.jpeg" alt="imagen">
+            </div>
+            <div style="background-color: #FFFFFF; padding-left: 40px; padding-bottom: 40px; padding-right: 40px; padding-top: 40px;" class="acercade">
+                <h2>Acerca de nosotros...</h2>
+            <p>Somos una repostería fundada a partir del amor por los postres y pasteles. Tenemos una pasión desenfrenada por ofrecerles a todos nuestros clientes productos de la más fina calidad y sabor. Los esperamos en nuestros local!</p>
+            </div>
+            
         </div>
+
     
     
 </body>
